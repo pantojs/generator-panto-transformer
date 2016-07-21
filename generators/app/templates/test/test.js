@@ -16,8 +16,8 @@ const <%= transformerName %>Transformer = require('../');
 
 describe('<%= projectName %>', () => {
     describe('#transform', () => {
-        it('', done => {
-            done)_
+        it('should ok', done => {
+            done();
         });
     });
 });

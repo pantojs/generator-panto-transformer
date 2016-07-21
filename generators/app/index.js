@@ -31,16 +31,16 @@ module.exports = yeoman.Base.extend({
             type: 'input',
             name: 'transformerName',
             message: 'Transformer name?',
-            default: this.appname
+            'default': this.appname
         }, {
             type: 'input',
             name: 'author',
             message: 'What\'s the author?',
-            default: this.user.git.email(),
+            'default': this.user.git.email(),
             store: true
         }];
 
-        return this.prompt(prompts, function (props) {
+        return this.prompt(prompts).then(function (props) {
             this.props = props;
             done();
         }.bind(this));
@@ -93,6 +93,8 @@ module.exports = yeoman.Base.extend({
             this.templatePath('package.json'),
             this.destinationPath('package.json'), {
                 projectName: this.props.projectName,
+                transformerName: this.props.transformerName,
+                transformerNameLowerCase: this.props.transformerNameLowerCase,
                 author: this.props.author
             }
         );
