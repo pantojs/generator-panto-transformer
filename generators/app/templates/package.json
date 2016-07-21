@@ -1,0 +1,33 @@
+{
+  "name": "<%= projectName %>",
+  "version": "0.1.0",
+  "description": "<%= transformerName %> transformer for panto",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint index.js && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pantojs/<%= projectName %>.git"
+  },
+  "keywords": [
+    "panto",
+    "integrity",
+    "transformer"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "author": "<%= author %>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/pantojs/<%= projectName %>/issues"
+  },
+  "homepage": "https://github.com/pantojs/<%= projectName %>",
+  "dependencies": {
+    "panto-transformer": "^0.2.1"
+  },
+  "devDependencies": {
+    "panto": "0.0.24"
+  }
+}
