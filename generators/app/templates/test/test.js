@@ -1,13 +1,13 @@
 /**
- * Copyright (C) 2016 pantojs.xyz
+ * Copyright (C) <%= copyrightDate %> pantojs.xyz
  * test.js
  *
  * changelog
- * 2016-06-24[16:37:33]:revised
+ * <%= datetime %>:revised
  *
- * @author yanni4night@gmail.com
- * @version 1.0.0
- * @since 1.0.0
+ * @author <%= author %>
+ * @version 0.1.0
+ * @since 0.1.0
  */
 'use strict';
 const assert = require('assert');

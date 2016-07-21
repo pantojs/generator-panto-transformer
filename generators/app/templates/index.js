@@ -1,9 +1,9 @@
 /**
- * Copyright (C) 2016 pantojs.xyz
+ * Copyright (C) <%= copyrightDate %> pantojs.xyz
  * index.js
  *
  * changelog
- * 2016-06-22[13:12:07]:revised
+ * <%= datetime %>:revised
  *
  * @author <%= author %>
  * @version 0.1.0
