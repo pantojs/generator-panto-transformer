@@ -71,22 +71,22 @@ module.exports = yeoman.Base.extend({
         );
 
         this.fs.copy(
-            this.templatePath('.editorconfig'),
+            this.templatePath('_editorconfig'),
             this.destinationPath('.editorconfig')
         );
 
         this.fs.copy(
-            this.templatePath('.travis.yml'),
+            this.templatePath('_travis.yml'),
             this.destinationPath('.travis.yml')
         );
 
         this.fs.copy(
-            this.templatePath('.eslintrc'),
+            this.templatePath('_eslintrc'),
             this.destinationPath('.eslintrc')
         );
 
         this.fs.copy(
-            this.templatePath('.gitignore'),
+            this.templatePath('_gitignore'),
             this.destinationPath('.gitignore')
         );
 
