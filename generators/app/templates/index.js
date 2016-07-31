@@ -20,6 +20,11 @@ class <%= transformerName %>Transformer extends Transformer {
         return super.transformAll(files);
     }
     isTorrential() {
+        // True->transformAll, False->_transform
+        return false;
+    }
+    isCacheable() {
+        // Return true if and only if your transformer is idempotent for file content
         return false;
     }
 }

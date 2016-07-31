@@ -28,10 +28,10 @@
   },
   "homepage": "https://github.com/pantojs/<%= projectName %>",
   "dependencies": {
-    "panto-transformer": "^0.2.2"
+    "panto-transformer": "^0.2.4"
   },
   "devDependencies": {
-    "panto": "0.0.28",
+    "panto": "0.0.30",
     "coveralls": "^2.11.9",
     "mocha": "^2.5.3",
     "mocha-lcov-reporter": "^1.2.0",
