@@ -6,7 +6,7 @@
 ```js
 panto.loadTransformer('<%= transformerNameLowerCase %>');
 
-panto.pick('**/*.js').<%= transformerNameLowerCase %>();
+panto.$('**/*.js').<%= funcName %>();
 ```
 
 ## options
@@ -18,7 +18,7 @@ panto.pick('**/*.js').<%= transformerNameLowerCase %>();
 [travis-image]: http://img.shields.io/travis/pantojs/<%= projectName %>.svg
 [david-dm-url]:https://david-dm.org/pantojs/<%= projectName %>
 [david-dm-image]:https://david-dm.org/pantojs/<%= projectName %>.svg
-[david-dm-dev-url]:https://david-dm.org/pantojs/<%= projectName %>#info=devDependencies
+[david-dm-dev-url]:https://david-dm.org/pantojs/<%= projectName %>#type=dev
 [david-dm-dev-image]:https://david-dm.org/pantojs/<%= projectName %>/dev-status.svg
 [coveralls-image]:https://coveralls.io/repos/github/pantojs/<%= projectName %>/badge.svg?branch=master
 [coveralls-url]:https://coveralls.io/github/pantojs/<%= projectName %>?branch=master

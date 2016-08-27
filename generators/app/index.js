@@ -15,7 +15,7 @@ var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
 var dateformat = require('dateformat');
-var capitalize = require('lodash/capitalize');
+var camelCase = require('lodash/camelCase');
 var kebabCase = require('lodash/kebabCase');
 
 module.exports = yeoman.Base.extend({
@@ -48,10 +48,10 @@ module.exports = yeoman.Base.extend({
     },
 
     writing: function () {
-
-        this.props.transformerName = capitalize(this.props.transformerName);
-        this.props.transformerNameLowerCase = this.props.transformerName.toLowerCase();
-        this.props.projectName = 'panto-transformer-' + kebabCase(this.props.transformerName).replace(/^\-/, '');
+        this.props.transformerName = camelCase(this.props.transformerName).replace(/^pantoTransformer/i, '').replace(/^\w/, function(n){return n.toUpperCase()});
+        this.props.transformerNameLowerCase = kebabCase(this.props.transformerName).toLowerCase().replace(/^\-/, '');
+        this.props.projectName = 'panto-transformer-' + this.props.transformerNameLowerCase;
+        this.props.funcName = this.props.transformerName.replace(/^\w/, function(n){return n.toLowerCase()});;
         this.props.datetime = dateformat('yyyy-mm-dd[HH:MM:ss]'); // 2016-07-21[22:18:34]
         this.props.copyrightDate = '2016';
 
