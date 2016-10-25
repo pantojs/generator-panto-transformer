@@ -16,5 +16,5 @@ $yo panto-transformer
 [npm-image]: http://img.shields.io/npm/v/generator-panto-transformer.svg
 [david-dm-url]:https://david-dm.org/pantojs/generator-panto-transformer
 [david-dm-image]:https://david-dm.org/pantojs/generator-panto-transformer.svg
-[david-dm-dev-url]:https://david-dm.org/pantojs/generator-panto-transformer#info=devDependencies
+[david-dm-dev-url]:https://david-dm.org/pantojs/generator-panto-transformer#type=dev
 [david-dm-dev-image]:https://david-dm.org/pantojs/generator-panto-transformer/dev-status.svg

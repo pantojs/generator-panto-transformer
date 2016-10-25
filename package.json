@@ -1,6 +1,6 @@
 {
   "name": "generator-panto-transformer",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Yeoman generator for panto transformer",
   "main": "index.js",
   "scripts": {
@@ -26,8 +26,8 @@
   "homepage": "https://github.com/pantojs/generator-panto-transformer",
   "dependencies": {
     "chalk": "^1.1.3",
-    "lodash": "^4.13.1",
+    "lodash": "^4.16.4",
     "yeoman-generator": "^0.24.1",
-    "yosay": "^1.2.0"
+    "yosay": "^1.2.1"
   }
 }
