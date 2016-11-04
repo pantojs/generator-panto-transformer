@@ -16,16 +16,18 @@ class <%= transformerName %>Transformer extends Transformer {
     _transform(file) {
         return super._transform(file);
     }
+    /*
     transformAll(files) {
         return super.transformAll(files);
     }
+    */
     isTorrential() {
         // True->transformAll, False->_transform
         return false;
     }
     isCacheable() {
         // Return true if and only if your transformer is idempotent for file content
-        return false;
+        return !!this.options.isCacheable;
     }
 }
 

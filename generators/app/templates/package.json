@@ -4,8 +4,8 @@
   "description": "<%= transformerName %> transformer for panto",
   "main": "index.js",
   "scripts": {
-    "test": "eslint src index.js && ./node_modules/.bin/mocha",
-    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "test": "eslint src index.js && ./node_modules/.bin/mocha --harmony",
+    "coveralls": "node --harmony node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "prepublish": "npm run test"
   },
   "pre-commit": "test",
@@ -31,7 +31,7 @@
     "panto-transformer": "^0.2.5"
   },
   "devDependencies": {
-    "panto": "0.1.0.alpha",
+    "panto": "0.2.0",
     "coveralls": "^2.11.14",
     "mocha": "^3.1.2",
     "mocha-lcov-reporter": "^1.2.0",
